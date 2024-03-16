@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/campus.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.register-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Defina a largura máxima do container */
+    width: 100%; /* Use 100% da largura disponível */
+}
+
+.register-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.register-container input[type="text"],
+.register-container input[type="password"],
+.register-container input[type="tel"] {
+    width: calc(100% - 42px); /* Leva em conta o padding de 10px + 32px do ícone do olho */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Defina a largura máxima do container */
+    width: 100%; /* Use 100% da largura disponível */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 42px); /* Leva em conta o padding de 10px + 32px do ícone do olho */
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Estilos para o olho de exibição de senha */
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle i {
+    color: #888;
+}
+
+.password-toggle i:hover {
+    color: #333;
+}
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.password-toggle i {
+    color: #888;
+}
+
+.password-toggle i:hover {
+    color: #333;
+}
+
+/* Estilos para as regras de senha */
+.password-rules {
+    margin-top: 5px;
+    color: #888;
+    font-size: 0.8em; /* Tamanho de fonte reduzido */
+    font-style: italic; /* Estilo itálico */
+    font-weight: 400; /* Peso da fonte normal */
+}
+
+/* Destaque para as regras de senha */
+.password-highlight {
+    color: #333; /* Cor do texto destacado */
+    font-weight: bold; /* Peso da fonte em negrito */
+}
+
+/* Estilos para a tela de sucesso */
+.success-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.success-message {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

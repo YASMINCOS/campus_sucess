@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Tela de Cadastro</h2>
+        <form id="register-form">
+            <input type="text" id="username" placeholder="Usuário" required>
+            <div style="position: relative;">
+                <input type="password" id="password" placeholder="Senha" required>
+                <div class="password-toggle" onclick="togglePasswordVisibility('password')">
+                    <i id="password-toggle-icon" class="fas fa-eye"></i>
+                </div>
+            </div>
+            <div style="position: relative;">
+                <input type="password" id="confirm-password" placeholder="Confirmar Senha" required>
+                <div class="password-toggle" onclick="togglePasswordVisibility('confirm-password')">
+                    <i id="confirm-password-toggle-icon" class="fas fa-eye"></i>
+                </div>
+            </div>
+            <div id="password-rules" class="password-rules">
+                A senha deve conter pelo menos <span class="password-highlight">8 caracteres</span>, incluindo letras <span class="password-highlight">maiúsculas</span>, <span class="password-highlight">minúsculas</span>, <span class="password-highlight">números</span> e <span class="password-highlight">caracteres especiais</span>.
+            </div>
+            <input type="tel" id="phone" placeholder="(XX) XXXXX-XXXX" required>
+            <div id="phone-rules" style="margin-top: 5px; color: #888;">O telefone deve estar no formato (XX) XXXXX-XXXX.</div>
+            <input type="submit" value="Cadastrar">
+        </form>
+        <div id="username-error" class="error-message"></div>
+        <div id="password-error" class="error-message"></div>
+        <div id="confirm-password-error" class="error-message"></div>
+        <div id="phone-error" class="error-message"></div>
+        <div id="success-message" class="success-message"></div>
+        <p>Você será redirecionado para a tela de login.</p>
+        <a href="login.html">Ir para a tela de login</a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="script/cadastro.js"></script>
+</body>
+</html>
